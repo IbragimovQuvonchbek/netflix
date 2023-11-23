@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Strange Things",
+        "country": "USA",
+        "year": "2016",
+        "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+        "likes": -1
+    },
+    {
+        "id": 2,
+        "name": "Chinor ostidagi duel",
+        "country": "Uzbekistan",
+        "year": "1985",
+        "description": "birnarsa",
+        "likes": 2
+    }
+]

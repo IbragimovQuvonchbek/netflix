@@ -1,0 +1,15 @@
+[
+    {
+        "id": 2,
+        "likedMovies": [
+            2
+        ]
+    },
+    {
+        "id": 1,
+        "likedMovies": [
+            1,
+            2
+        ]
+    }
+]
