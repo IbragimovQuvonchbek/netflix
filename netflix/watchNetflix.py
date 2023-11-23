@@ -60,9 +60,9 @@ class WatchNetflix:
             if movie['id'] == movieId:
                 if movie['id'] in self.likedMovies:
                     movie['likes'] -= 1
+                    self.likedMovies.remove(movie['id'])
                     with open('netflix.json', 'w') as f:
                         json.dump(data, f, indent=4)
-                    self.likedMovies.remove(movie['id'])
                     return False
                 else:
                     self.likedMovies.append(movie['id'])
