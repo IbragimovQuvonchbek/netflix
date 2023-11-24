@@ -1,7 +1,9 @@
-from user import User, getData
 from hashlib import blake2b
+
 from manageNetlix import ManageNetflix
+from user import User, getData
 from watchNetflix import showMovieList, WatchNetflix
+
 
 def signup():
     name = input("name:")
@@ -12,7 +14,8 @@ def signup():
     currentUser.createNewUser()
     userId = currentUser.id
     return userId
-    
+
+
 def login():
     username = input("username:")
     password = input("password:")
@@ -25,6 +28,7 @@ def login():
     admin = isAdmin(username, password)
     return (userId, admin)
 
+
 def addMovie():
     name = input("Movie name: ")
     description = input("Movie description: ")
@@ -34,8 +38,10 @@ def addMovie():
     isAdded = newMovie.addMovie()
     print("successfully movie added" if isAdded else "this movie alreade exists")
 
+
 def isAdmin(username, password):
     return username == "ibragimov10" and password == "abc123"
+
 
 def likeMovie(userId, movieId):
     watch = WatchNetflix(userId)
@@ -45,9 +51,6 @@ def likeMovie(userId, movieId):
     else:
         print("movie disliked")
 
+
 def watchMovie():
     showMovieList()
-    
-    
-    
-    

@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "All the Light We Cannot See",
+        "country": "USA",
+        "year": "2023",
+        "description": "The story of Marie-Laure, a blind French teenager, and Werner, a German soldier, whose paths collide in occupied France as both try to survive the devastation of World War II.",
+        "likes": 0
+    },
+    {
+        "id": 2,
+        "name": "Invincible",
+        "country": "USA",
+        "year": "2021",
+        "description": "An adult animated series based on the Skybound/Image comic about a teenager whose father is the most powerful superhero on the planet.",
+        "likes": 1
+    }
+]

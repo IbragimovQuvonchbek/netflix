@@ -63,6 +63,13 @@ class WatchNetflix:
                     self.likedMovies.remove(movie['id'])
                     with open('netflix.json', 'w') as f:
                         json.dump(data, f, indent=4)
+                    data = self.getDataWatch()
+                    for details in data:
+                        if details['id'] == self.userId:
+                            details['likedMovies'] = self.likedMovies
+                            with open('watchNetflix.json', 'w') as f:
+                                json.dump(data, f, indent=4)
+                            break
                     return False
                 else:
                     self.likedMovies.append(movie['id'])
