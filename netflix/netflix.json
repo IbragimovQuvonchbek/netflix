@@ -5,7 +5,7 @@
         "country": "USA",
         "year": "2023",
         "description": "The story of Marie-Laure, a blind French teenager, and Werner, a German soldier, whose paths collide in occupied France as both try to survive the devastation of World War II.",
-        "likes": 0
+        "likes": 100
     },
     {
         "id": 2,
@@ -13,6 +13,6 @@
         "country": "USA",
         "year": "2021",
         "description": "An adult animated series based on the Skybound/Image comic about a teenager whose father is the most powerful superhero on the planet.",
-        "likes": 2
+        "likes": 222
     }
 ]

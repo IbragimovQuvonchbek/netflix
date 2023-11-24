@@ -21,12 +21,13 @@ def login():
     password = input("password:")
     data = getData()
     userId = 0
+    admin = False
     for user in data:
         if user['username'] == username and user['password'] == blake2b(password.encode('utf-8')).hexdigest():
             userId = user['id']
+            admin = user['isAdmin']
             break
-    admin = isAdmin(username, password)
-    return (userId, admin)
+    return userId, admin
 
 
 def addMovie():
@@ -37,10 +38,6 @@ def addMovie():
     newMovie = ManageNetflix(movieName=name, movieYear=year, movieCountry=country, movieDescription=description)
     isAdded = newMovie.addMovie()
     print("successfully movie added" if isAdded else "this movie alreade exists")
-
-
-def isAdmin(username, password):
-    return username == "ibragimov10" and password == "abc123"
 
 
 def likeMovie(userId, movieId):

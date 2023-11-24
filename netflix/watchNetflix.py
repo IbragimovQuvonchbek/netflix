@@ -39,13 +39,14 @@ class WatchNetflix:
         data = self.getDataWatch()
         isFound = False
         for detail in data:
-            if detail['id'] == userId:
+            if detail['userId'] == userId:
                 self.likedMovies = detail['likedMovies']
                 isFound = True
                 break
         if not isFound:
             newUser = {
-                "id": userId,
+                "id": 1 if not data else data[-1]["id"] + 1,
+                "userId": userId,
                 "likedMovies": []
             }
             data.append(newUser)
@@ -65,7 +66,7 @@ class WatchNetflix:
                         json.dump(data, f, indent=4)
                     data = self.getDataWatch()
                     for details in data:
-                        if details['id'] == self.userId:
+                        if details['userId'] == self.userId:
                             details['likedMovies'] = self.likedMovies
                             with open('watchNetflix.json', 'w') as f:
                                 json.dump(data, f, indent=4)
@@ -78,7 +79,7 @@ class WatchNetflix:
                         json.dump(data, f, indent=4)
                     data = self.getDataWatch()
                     for details in data:
-                        if details['id'] == self.userId:
+                        if details['userId'] == self.userId:
                             details['likedMovies'] = self.likedMovies
                             with open('watchNetflix.json', 'w') as f:
                                 json.dump(data, f, indent=4)

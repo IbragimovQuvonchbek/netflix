@@ -32,6 +32,7 @@ class User:
                 "surname": self.surname,
                 "username": self.username,
                 "password": blake2b(self.__password.encode('utf-8')).hexdigest(),
+                "isAdmin": True if not data else False,
             }
             data.append(newUser)
             with open('user.json', 'w') as f:

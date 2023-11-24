@@ -1,4 +1,4 @@
-# Admin-login:ibragimov10-password:abc123
+# first person who registered, is admin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 from functions import signup, login, addMovie, showMovieList, likeMovie
 
 while True:
