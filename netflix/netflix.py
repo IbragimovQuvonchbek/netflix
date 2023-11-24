@@ -1,6 +1,19 @@
 # first person who registered, is admin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 from functions import signup, login, addMovie, showMovieList, likeMovie
 
+
+print(
+    '''                                                                   
+                                           ""                       
+                                                                    
+88,dPYba,,adPYba,   ,adPPYba,  8b       d8 88  ,adPPYba, ,adPPYba,  
+88P'   "88"    "8a a8"     "8a `8b     d8' 88 a8P_____88 I8[    ""  
+88      88      88 8b       d8  `8b   d8'  88 8PP"""""""  `"Y8ba,   
+88      88      88 "8a,   ,a8"   `8b,d8'   88 "8b,   ,aa aa    ]8I  
+88      88      88  `"YbbdP"'      "8"     88  `"Ybbd8"' `"YbbdP"'  
+    '''
+)
+
 while True:
     option = int(input("Exit | Sing up | Log in (0|1|2): "))
     currentUser = 0
