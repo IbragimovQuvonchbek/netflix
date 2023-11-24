@@ -1,4 +1,4 @@
-# first person who registered, is admin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# first person who registers    , is admin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 from functions import signup, login, addMovie, showMovieList, likeMovie
 
 
