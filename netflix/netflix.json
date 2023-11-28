@@ -5,7 +5,8 @@
         "country": "USA",
         "year": "2023",
         "description": "The story of Marie-Laure, a blind French teenager, and Werner, a German soldier, whose paths collide in occupied France as both try to survive the devastation of World War II.",
-        "likes": 100
+        "likes": 101,
+        "duration": "2h 30min"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "country": "USA",
         "year": "2021",
         "description": "An adult animated series based on the Skybound/Image comic about a teenager whose father is the most powerful superhero on the planet.",
-        "likes": 222
+        "likes": 222,
+        "duration": "1h"
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "country": "USA",
         "year": "1999",
         "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-        "likes": 350
+        "likes": 350,
+        "duration": "2h 16min"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "country": "USA",
         "year": "2010",
         "description": "A thief who enters the dreams of others to steal their secrets must plant an idea into someone's mind.",
-        "likes": 500
+        "likes": 500,
+        "duration": "2h 28min"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "country": "USA",
         "year": "1994",
         "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-        "likes": 700
+        "likes": 700,
+        "duration": "2h 22min"
     },
     {
         "id": 6,
@@ -45,7 +50,8 @@
         "country": "USA",
         "year": "1972",
         "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-        "likes": 800
+        "likes": 800,
+        "duration": "2h 55min"
     },
     {
         "id": 7,
@@ -53,7 +59,8 @@
         "country": "USA",
         "year": "2008",
         "description": "When the Joker emerges to create chaos and anarchy, Batman must confront the greatest psychological and physical tests of his ability to fight injustice.",
-        "likes": 900
+        "likes": 900,
+        "duration": "2h 32min"
     },
     {
         "id": 8,
@@ -61,7 +68,8 @@
         "country": "USA",
         "year": "1994",
         "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-        "likes": 600
+        "likes": 600,
+        "duration": "2h 34min"
     },
     {
         "id": 9,
@@ -69,7 +77,8 @@
         "country": "USA",
         "year": "1994",
         "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
-        "likes": 450
+        "likes": 450,
+        "duration": "2h 22min"
     },
     {
         "id": 10,
@@ -77,7 +86,8 @@
         "country": "USA",
         "year": "1993",
         "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-        "likes": 550
+        "likes": 550,
+        "duration": "3h 15min"
     },
     {
         "id": 11,
@@ -85,7 +95,8 @@
         "country": "USA",
         "year": "2014",
         "description": "A comedic tale revolving around the theft and recovery of a priceless Renaissance painting and the battle for an enormous family fortune.",
-        "likes": 300
+        "likes": 300,
+        "duration": "1h 39min"
     },
     {
         "id": 12,
@@ -93,7 +104,8 @@
         "country": "USA",
         "year": "1991",
         "description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
-        "likes": 400
+        "likes": 400,
+        "duration": "1h 58min"
     },
     {
         "id": 13,
@@ -101,7 +113,8 @@
         "country": "USA",
         "year": "1999",
         "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
-        "likes": 650
+        "likes": 650,
+        "duration": "2h 19min"
     },
     {
         "id": 14,
@@ -109,7 +122,8 @@
         "country": "USA",
         "year": "1995",
         "description": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
-        "likes": 420
+        "likes": 420,
+        "duration": "46min"
     },
     {
         "id": 15,
@@ -117,6 +131,7 @@
         "country": "USA",
         "year": "2004",
         "description": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
-        "likes": 280
+        "likes": 280,
+        "duration": "48min"
     }
 ]

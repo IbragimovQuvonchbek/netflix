@@ -73,6 +73,7 @@ class Cart:
                     print(f"Movie Name: {movie['name']}")
                     print(f"Movie description: {movie['description']}")
                     print(f"Movie Contry: {movie['country']}")
+                    print(f"Movie Duration: {movie['duration']}")
                     print(f"Movie Year: {movie['year']}")
                     print(f"Likes: {movie['likes']}")
                     print("-" * len(movie['description']))

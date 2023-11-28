@@ -3,6 +3,7 @@ from hashlib import blake2b
 from cart import Cart
 from manageNetlix import ManageNetflix
 from user import User, getData
+from watchNetflix import getData as movies
 from watchNetflix import showMovieList, WatchNetflix
 
 
@@ -57,6 +58,29 @@ def saveMovie(userId, movieId):
         print("movie Saved")
     else:
         print("movie Unsaved")
+
+
+def filterByDuration():
+    data = movies()
+    for movie in data:
+        date = movie["duration"]
+        dur = dict()
+        if 'h' in date:
+            x = date.split('h')
+            dur['h'] = int(x[0])
+        if "min" in date:
+            dur['min'] = int(date[date.index('min') - 2:date.index('min')])
+        if 'h' in list(dur.keys()):
+            if dur['h'] >= 2 and 'min' in list(dur.keys()):
+                print("-" * len(movie['description']))
+                print(f"id: {movie['id']}")
+                print(f"Movie Name: {movie['name']}")
+                print(f"Movie description: {movie['description']}")
+                print(f"Movie Contry: {movie['country']}")
+                print(f"Movie Duration: {movie['duration']}")
+                print(f"Movie Year: {movie['year']}")
+                print(f"Likes: {movie['likes']}")
+                print("-" * len(movie['description']))
 
 
 def showSavedMovies(userId):

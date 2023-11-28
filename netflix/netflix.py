@@ -1,5 +1,5 @@
 # first person who registers, is admin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-from functions import signup, login, addMovie, showMovieList, likeMovie, showSavedMovies, saveMovie
+from functions import signup, login, addMovie, showMovieList, likeMovie, showSavedMovies, saveMovie, filterByDuration
 
 print(
     '''                                                                   
@@ -39,7 +39,7 @@ while True:
         elif optionForAll == 1:
             showMovieList()
             while True:
-                option2 = int(input("Back | Like movies | Save movie(0|1|2): "))
+                option2 = int(input("Back | Like movies | Save movie | Movies more than 1 hour (0|1|2|3): "))
                 if option2 == 0:
                     break
                 elif option2 == 1:
@@ -48,6 +48,8 @@ while True:
                 elif option2 == 2:
                     movieId = int(input("Write movie id:     "))
                     saveMovie(currentUser, movieId)
+                elif option2 == 3:
+                    filterByDuration()
         elif optionForAll == 2:
             showSavedMovies(currentUser)
         elif optionForAll == 3 and isAdmin:

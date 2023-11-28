@@ -6,10 +6,11 @@ from watchNetflix import getData
 class ManageNetflix:
     id = 0
 
-    def __init__(self, movieName, movieYear, movieCountry, movieDescription):
+    def __init__(self, movieName, movieYear,movieDuration, movieCountry, movieDescription):
         self.movieName = movieName
         self.movieYear = movieYear
         self.movieCountry = movieCountry
+        self.movieDuration = movieDuration
         self.movieDescription = movieDescription
 
     def addMovie(self):
@@ -20,6 +21,7 @@ class ManageNetflix:
                 "id": self.id,
                 "name": self.movieName,
                 "country": self.movieCountry,
+                "duration": self.movieDuration,
                 "year": self.movieYear,
                 "description": self.movieDescription,
                 "likes": 0,
