@@ -14,6 +14,7 @@ def getData():
 
 def showMovieList():
     for movie in getData():
+        print("-" * len(movie['description']))
         print(f"id: {movie['id']}")
         print(f"Movie Name: {movie['name']}")
         print(f"Movie description: {movie['description']}")

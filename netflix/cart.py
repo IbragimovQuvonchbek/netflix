@@ -68,6 +68,7 @@ class Cart:
         for id in movieIds:
             for movie in data:
                 if movie['id'] == id:
+                    print("-" * len(movie['description']))
                     print(f"id: {movie['id']}")
                     print(f"Movie Name: {movie['name']}")
                     print(f"Movie description: {movie['description']}")
