@@ -63,24 +63,27 @@ def saveMovie(userId, movieId):
 def filterByDuration():
     data = movies()
     for movie in data:
-        date = movie["duration"]
-        dur = dict()
-        if 'h' in date:
-            x = date.split('h')
-            dur['h'] = int(x[0])
-        if "min" in date:
-            dur['min'] = int(date[date.index('min') - 2:date.index('min')])
-        if 'h' in list(dur.keys()):
-            if dur['h'] >= 2 and 'min' in list(dur.keys()):
-                print("-" * len(movie['description']))
-                print(f"id: {movie['id']}")
-                print(f"Movie Name: {movie['name']}")
-                print(f"Movie description: {movie['description']}")
-                print(f"Movie Contry: {movie['country']}")
-                print(f"Movie Duration: {movie['duration']}")
-                print(f"Movie Year: {movie['year']}")
-                print(f"Likes: {movie['likes']}")
-                print("-" * len(movie['description']))
+        duration = movie["duration"]
+        parts = duration.split()
+
+        hours = 0
+        minutes = 0
+
+        for part in parts:
+            if 'h' in part:
+                hours = int(part.replace('h', ''))
+            elif 'min' in part:
+                minutes = int(part.replace('min', ''))
+        if hours >= 2:
+            print("-" * len(movie['description']))
+            print(f"id: {movie['id']}")
+            print(f"Movie Name: {movie['name']}")
+            print(f"Movie description: {movie['description']}")
+            print(f"Movie Contry: {movie['country']}")
+            print(f"Movie Duration: {movie['duration']}")
+            print(f"Movie Year: {movie['year']}")
+            print(f"Likes: {movie['likes']}")
+            print("-" * len(movie['description']))
 
 
 def showSavedMovies(userId):
