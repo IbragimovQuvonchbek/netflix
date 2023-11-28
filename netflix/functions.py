@@ -1,5 +1,6 @@
 from hashlib import blake2b
 
+from cart import Cart
 from manageNetlix import ManageNetflix
 from user import User, getData
 from watchNetflix import showMovieList, WatchNetflix
@@ -47,6 +48,20 @@ def likeMovie(userId, movieId):
         print("movie liked")
     else:
         print("movie disliked")
+
+
+def saveMovie(userId, movieId):
+    save = Cart(userId)
+    isSaved = save.saveMovie(movieId)
+    if isSaved:
+        print("movie Saved")
+    else:
+        print("movie Unsaved")
+
+
+def showSavedMovies(userId):
+    save = Cart(userId)
+    save.showSavedMovies()
 
 
 def watchMovie():

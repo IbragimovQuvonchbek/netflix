@@ -1,6 +1,5 @@
-# first person who registers    , is admin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-from functions import signup, login, addMovie, showMovieList, likeMovie
-
+# first person who registers, is admin!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+from functions import signup, login, addMovie, showMovieList, likeMovie, showSavedMovies, saveMovie
 
 print(
     '''                                                                   
@@ -31,22 +30,27 @@ while True:
     while True and currentUser != 0:
         optionForAll = 0
         if isAdmin:
-            optionForAll = int(input("Back | Watch movies |  Add movie (0|1|2): "))
+            optionForAll = int(input("Back | Watch movies | Watch saved Movies| Add movie (0|1|2|3): "))
         else:
-            optionForAll = int(input("Back | Watch movies (0|1): "))
+            optionForAll = int(input("Back | Watch movies | Watch saved Movies (0|1|2): "))
 
         if optionForAll == 0:
             break
         elif optionForAll == 1:
             showMovieList()
             while True:
-                option2 = int(input("Back | Like movies (0|1): "))
+                option2 = int(input("Back | Like movies | Save movie(0|1|2): "))
                 if option2 == 0:
                     break
                 elif option2 == 1:
                     movieId = int(input("Write movie id: "))
                     likeMovie(currentUser, movieId)
-        elif optionForAll == 2 and isAdmin:
+                elif option2 == 2:
+                    movieId = int(input("Write movie id: "))
+                    saveMovie(currentUser, movieId)
+        elif optionForAll == 2:
+            showSavedMovies(currentUser)
+        elif optionForAll == 3 and isAdmin:
             addMovie()
         else:
             print("invalid option")
