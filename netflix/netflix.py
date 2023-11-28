@@ -46,7 +46,7 @@ while True:
                     movieId = int(input("Write movie id: "))
                     likeMovie(currentUser, movieId)
                 elif option2 == 2:
-                    movieId = int(input("Write movie id: "))
+                    movieId = int(input("Write movie id:     "))
                     saveMovie(currentUser, movieId)
         elif optionForAll == 2:
             showSavedMovies(currentUser)

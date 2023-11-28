@@ -14,5 +14,109 @@
         "year": "2021",
         "description": "An adult animated series based on the Skybound/Image comic about a teenager whose father is the most powerful superhero on the planet.",
         "likes": 222
+    },
+    {
+        "id": 3,
+        "name": "The Matrix",
+        "country": "USA",
+        "year": "1999",
+        "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+        "likes": 350
+    },
+    {
+        "id": 4,
+        "name": "Inception",
+        "country": "USA",
+        "year": "2010",
+        "description": "A thief who enters the dreams of others to steal their secrets must plant an idea into someone's mind.",
+        "likes": 500
+    },
+    {
+        "id": 5,
+        "name": "The Shawshank Redemption",
+        "country": "USA",
+        "year": "1994",
+        "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "likes": 700
+    },
+    {
+        "id": 6,
+        "name": "The Godfather",
+        "country": "USA",
+        "year": "1972",
+        "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+        "likes": 800
+    },
+    {
+        "id": 7,
+        "name": "The Dark Knight",
+        "country": "USA",
+        "year": "2008",
+        "description": "When the Joker emerges to create chaos and anarchy, Batman must confront the greatest psychological and physical tests of his ability to fight injustice.",
+        "likes": 900
+    },
+    {
+        "id": 8,
+        "name": "Pulp Fiction",
+        "country": "USA",
+        "year": "1994",
+        "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        "likes": 600
+    },
+    {
+        "id": 9,
+        "name": "Forrest Gump",
+        "country": "USA",
+        "year": "1994",
+        "description": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
+        "likes": 450
+    },
+    {
+        "id": 10,
+        "name": "Schindler's List",
+        "country": "USA",
+        "year": "1993",
+        "description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+        "likes": 550
+    },
+    {
+        "id": 11,
+        "name": "The Grand Budapest Hotel",
+        "country": "USA",
+        "year": "2014",
+        "description": "A comedic tale revolving around the theft and recovery of a priceless Renaissance painting and the battle for an enormous family fortune.",
+        "likes": 300
+    },
+    {
+        "id": 12,
+        "name": "The Silence of the Lambs",
+        "country": "USA",
+        "year": "1991",
+        "description": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+        "likes": 400
+    },
+    {
+        "id": 13,
+        "name": "Fight Club",
+        "country": "USA",
+        "year": "1999",
+        "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+        "likes": 650
+    },
+    {
+        "id": 14,
+        "name": "The Usual Suspects",
+        "country": "USA",
+        "year": "1995",
+        "description": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+        "likes": 420
+    },
+    {
+        "id": 15,
+        "name": "Eternal Sunshine of the Spotless Mind",
+        "country": "USA",
+        "year": "2004",
+        "description": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
+        "likes": 280
     }
 ]
